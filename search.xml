@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[06/06 - 06/10 五日热点整理]]></title>
+    <url>%2F2018%2F06%2F10%2F06-06-06-10-%E4%BA%94%E6%97%A5%E7%83%AD%E7%82%B9%E6%95%B4%E7%90%86%2F</url>
+    <content type="text"><![CDATA[G7峰会 最失败的一次G7峰会。 在俄罗斯与伊朗问题，联合贸易，进出口征税问题，气候问题上，美国依旧不与其他各国达成共识，没有任何进展；几国领导言语上冲突严重；全球范围内的贸易战一触即发。 快手1.7亿全资收购A站 快手以1.7亿元全盘收购A站，A站终于复活，结束了持续已久的股权纷争博弈。 A站的用户主要分布于一二线城市青少年群体，快手用户分布在三四五线城市的青年及以上年龄群体；从内容上看A站主打二次元内容，快手主打现实底层生活内容；从形式上看，A站属长视频平台，快手短视频平台。因此快手的收购不仅仅是A站的一根救命稻草，也从用户，内容与形式上全面弥补了快手的短板，极大扩大了生态链。 中兴正式与美签约解禁 10亿美元罚款，4亿美元保证金，换来为期10年的解禁。 两年又白干了。 中兴一事前后不到50天，其中的经贸博弈和核心技术禁锢，却是改革开放以来最经典的一课。 美国Summit成全球最快超算 美国能源部国家实验室公布Summit超算，实现每秒330亿亿次混合精度计算，成为最强大超算，打破了中国超算霸榜5年的局面]]></content>
+      <categories>
+        <category>五日热点整理</category>
+      </categories>
+      <tags>
+        <tag>五日热点整理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[数据结构轮子：2-栈之顺序栈的类实现]]></title>
     <url>%2F2018%2F06%2F10%2F%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%BD%AE%E5%AD%90%EF%BC%9A2-%E6%A0%88%E4%B9%8B%E9%A1%BA%E5%BA%8F%E6%A0%88%E7%9A%84%E7%B1%BB%E5%AE%9E%E7%8E%B0%2F</url>
     <content type="text"><![CDATA[栈的基类123456789101112131415#include&lt;iostream&gt;using namespace std;template&lt;class T&gt;class Stack&#123; public: Stack()&#123;&#125;; ~Stack()&#123;&#125;; virtual void Push(const T&amp; x)=0; virtual T Pop()=0; virtual T GetTop()=0; virtual bool IsEmpty()const =0; virtual int GetSize()const =0; virtual T GetSum()=0;&#125;; 顺序栈123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113#include&lt;iostream&gt;#include"Stack"using namespace std;const int increaseSize = 20;const int defaultSize = 50;template &lt;class T&gt;class SeqStack: public Stack&lt;T&gt; &#123; private: T *data; int top; int maxSize; void OverFlowProcess(); public: SeqStack(int sz = defaultSize); ~SeqStack()&#123;delete []data;&#125; void Push(const T&amp; x); T Pop(); T GetTop(); bool IsEmpty()const&#123;return (top==-1)?true:false;&#125; int GetSize()const&#123;return (top+1);&#125; void Clear()&#123; top = -1; &#125; void Output(); T GetSum(); //friend ostream&amp; operator &lt;&lt; (ostream&amp; os, SeqStack&lt;T&gt;&amp; s);&#125;;template &lt;class T&gt;void SeqStack&lt;T&gt;::OverFlowProcess()&#123; maxSize+=increaseSize; T* ptr = new T[maxSize]; if(ptr==NULL)&#123; cout&lt;&lt;"err code:1"&lt;&lt;endl; exit(1); &#125; T *srcptr = data; T *desptr = ptr; int n = top+1; while(n--)&#123; *desptr = *srcptr; desptr++; srcptr++; &#125; delete []data; data = ptr;&#125;template&lt;class T&gt;SeqStack&lt;T&gt;::SeqStack(int sz)&#123; data = new T[sz]; maxSize = defaultSize; top = -1;&#125;template&lt;class T&gt;void SeqStack&lt;T&gt;::Push(const T&amp; x)&#123; if(top+1&gt;=maxSize) OverFlowProcess(); top++; data[top] = x;&#125;template&lt;class T&gt;T SeqStack&lt;T&gt;::Pop()&#123; if(IsEmpty()) cout&lt;&lt;"err code:2"&lt;&lt;endl; else&#123; top--; return data[top+1]; &#125; return 0;&#125;template&lt;class T&gt;T SeqStack&lt;T&gt;::GetTop()&#123; if(IsEmpty()) cout&lt;&lt;"err code:2"&lt;&lt;endl; else&#123; return data[top]; &#125; return 0;&#125;template&lt;class T&gt;void SeqStack&lt;T&gt;::Output()&#123; for(int i=0;i&lt;=top;i++) cout&lt;&lt;data[i]&lt;&lt;' '; cout&lt;&lt;endl;&#125;template&lt;class T&gt;T SeqStack&lt;T&gt;::GetSum()&#123; T sum=0; for(int i=0;i&lt;=top;i++) sum+=data[i]; return sum;&#125;/*template&lt;class T&gt;ostream&amp; operator &lt;&lt; (ostream&amp; os, SeqStack&lt;T&gt;&amp; s)&#123; for(int i=0;i&lt;=s.top;i++) os&lt;&lt;s.data[i]&lt;&lt;' '; os&lt;&lt;endl; return os;&#125;*/ 函数说明12345678910111213141516171819202122232425//构造函数，构造时声明栈容量，默认容量为50 SeqStack(int sz = defaultSize);//析构函数，清空栈内存 ~SeqStack(); //向栈顶堆一个数据 void Push(const T&amp; x);//从栈顶溢出一个数据，并将它返回 T Pop();//返回栈顶的数据 T GetTop();//检查栈是否为空，空则返回true，非空则返回false bool IsEmpty()const;//返回栈中数据个数 int GetSize()const;//将栈清空 void Clear(); //栈溢出操作，每次增加20个空间，可无限扩展 void OverFlowProcess();//从栈底到栈顶输出栈中所有数据 void Output();//计算栈中所有数据的总和 T GetSum(); 报错信息121：调整栈容量出现错误2：栈已空，无法进行操作 总结 注意！为类内函数内元素赋默认值时，要在声明时赋值，并在之后无论类内类外的描述中都不需要赋值。该bug调了近一个小时。。。]]></content>
@@ -21,9 +32,9 @@
         <category>数据结构与算法</category>
       </categories>
       <tags>
+        <tag>数据结构</tag>
         <tag>顺序表</tag>
         <tag>线性表</tag>
-        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
