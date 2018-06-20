@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[转存：暑期培训安排及资料]]></title>
+    <url>%2F2018%2F06%2F20%2F%E8%BD%AC%E5%AD%98%EF%BC%9A%E6%9A%91%E6%9C%9F%E5%9F%B9%E8%AE%AD%E5%AE%89%E6%8E%92%E5%8F%8A%E8%B5%84%E6%96%99%2F</url>
+    <content type="text"><![CDATA[暑期培训 目标 完成一个简单的视频APP. 培训内容 Java语言基础知识 Android基础知识 Android布局控件 Android高级控件 Android网络请求 Android常见库使用 视频APP的制作 一项一天，总共七天完成。 课程学习 JDK环境变量配置 JAVA基础语法 Android Studio下载 安卓模拟器：Genymotion 慕课网 极客学院 Kotlin中文文档 Kotlin在线编译 推荐书籍 第二行代码 Thinking In Java 中文版 疯狂Android讲义第三版 Android群英传 Android 设计模式源码分析 Android开发艺术探索 推荐博客 翔工作室博客 张鸿洋 任玉刚 刘桂林 Android开发技术周报 胡凯 张兴业 Android Developers Blog 代码家 drakeet mobdevgroup(分享IOS、Android、Html5等) Material Design 设计 Material Design 教程 Material Design 教程(中文版) Material Design Android Library 十大Material Design开源项目 参考文档 Google Developers Material Design 开发者参考文档 Android官方培训课程中文版(v0.9.7) Android 源码在线 开源库收集 Android 开源项目汇总 Android 开源项目源码分析 泡在网上的日子 android-gems Android Libraries and Resources Android Arsenal Android 开发者杂志周刊(资料来自 Drakeet , 原链接 地址 ) 周刊名 简介 Android 开发技术周报 Android 开发技术周报由@脉脉不嘚語 维护更新, 分享的都是高质量的文章教程,工具等 Android 科学院 由 @duguguiyu和豌豆荚一小撮工程师组成, 分享的都是最新的 Android 技术 开发技术前线 开发技术前线是一个高质量技术文章的聚合网站, 主要分享 Android, iOS等内容 App 开发日报 App 开发日报主要关注移动应用的开发, 分享的内容主要来自微博上知名的开发者推荐的内容 Android 开发周报 Android 开发周报是郭亮在连载更新在 Infoq 的周刊, 它不仅分享 Android 的相关新闻, 新工具 干货集中营 由 代码家 维护更新 Android Weekly Android Weekly 是由Android 团队的成员和国外知名的 Android 开发者维护, 分享的内容不仅仅只有干货, 而且还有最新的技术分享 设计模式 Java之美[从菜鸟到高手演变]之设计模式 java-design-patterns Android源码设计模式分析项目 书籍:Android源码设计模式 第2版 其他 翔工作室首页 矿大导航 矿大浏览器APP Git教程 国内可用API]]></content>
+      <categories>
+        <category>工作总结</category>
+      </categories>
+      <tags>
+        <tag>App</tag>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[06/11 - 06/15 五日热点整理]]></title>
     <url>%2F2018%2F06%2F16%2F06-11-06-15-%E4%BA%94%E6%97%A5%E7%83%AD%E7%82%B9%E6%95%B4%E7%90%86%2F</url>
     <content type="text"><![CDATA[5G标准出台 &ensp; 5G商用进入全面冲刺阶段，中国能在5G时代夺得多少话语权，还要拭目以待。按照工信部部署，我国将于2020年实现5G商用。 A站数据遭泄露 &ensp; A站主动承认数据库遭到泄露，被公众认为其责任态度十分诚恳，两日后黑客主动宣布决定无条件删除数据库，理由是A站客服态度诚恳。 &ensp; 个人对事件背后的真实性表示怀疑，认为是快手收购A站后回收老用户的一个举措。先制造热点吸引眼光，随后敦促用户来修改密码，并表明公司诚信可靠得态度，再以大团圆的结局迅速了结。虽然公关俗套又幼稚，但真的很值得学习！ 今日头条上线游戏板块 &ensp; 今日头条低调上线“今日游戏”功能，进军游戏板块，与腾讯市场正面争夺。今日游戏里的推荐，以网易系居多。 &ensp; 万万没想到，你不搞音乐不搞社交先搞起游戏了。非常不看好。。。 Steam将推出中国版 &ensp; 经营Steam平台的美国游戏公司Valve与中国合作伙伴完美世界宣布，将在未来推出本土化服务“Steam中国”，并宣称Steam中国并不影响Steam现有国际业务。 &ensp; 然而从正常的业务逻辑角度，Steam中国一旦推出，Steam国际是一定会被墙掉的。]]></content>
@@ -82,9 +94,9 @@
         <category>数据结构与算法</category>
       </categories>
       <tags>
+        <tag>数据结构</tag>
         <tag>顺序表</tag>
         <tag>线性表</tag>
-        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
